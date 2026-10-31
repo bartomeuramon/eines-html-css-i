@@ -3,3 +3,17 @@ body {
   color: #1f1f1f;
   background: linear-gradient(to bottom, #bada55, #c0ffee);
 }
+h1 {
+  user-select: none;
+  margin-bottom: 20px;
+}
+body {
+  height: 100vh;
+  color: #1f1f1f;
+  background: linear-gradient(to bottom, #bada55, #c0ffee);
+}
+
+h1 {
+  user-select: none;
+  margin-bottom: 20px;
+}
