@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Un plat salat i unes postres: consulta les receptes de tumbet i gató d’ametlla."
+    />
+    <title>Receptes mallorquines | Sabors de Mallorca</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body data-page="categoria">
+    <include src="./src/partials/header.html"></include>
+    <main id="contingut" tabindex="-1">
+      <section class="contenidor seccio">
+        <p class="etiqueta">El receptari</p>
+        <h1>Receptes <em>mallorquines.</em></h1>
+        <p class="entradeta ample-text">
+          De les hortalisses d’estiu a l’ametlla: un plat salat i unes postres
+          per descobrir la cuina de l’illa.
+        </p>
+        <div class="filtres" hidden>
+          <span>Què et fa ganes?</span>
+          <div role="group" aria-label="Filtra les receptes">
+            <button
+              class="filtre"
+              type="button"
+              data-filtre="totes"
+              aria-pressed="true"
+            >
+              Totes</button
+            ><button
+              class="filtre"
+              type="button"
+              data-filtre="salat"
+              aria-pressed="false"
+            >
+              Salat</button
+            ><button
+              class="filtre"
+              type="button"
+              data-filtre="dolc"
+              aria-pressed="false"
+            >
+              Dolç
+            </button>
+          </div>
+        </div>
+        <p id="resultats" class="resultats" role="status" aria-live="polite">
+          2 receptes per descobrir
+        </p>
+        <div class="targetes">
+          <article class="targeta" data-tipus="salat">
+            <a
+              href="/det1/"
+              class="imatge-targeta"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                src="../img/tumbet.jpg"
+                alt=""
+                width="960"
+                height="720"
+                loading="lazy"
+            /></a>
+            <div class="cos-targeta">
+              <p class="etiqueta">De l’horta · Plat de verdures</p>
+              <h2><a href="/det1/">Tumbet mallorquí</a></h2>
+              <p>
+                Patates, albergínies i pebres sota una capa de salsa de
+                tomàtiga. Tot el sabor de l’horta, dins una greixonera.
+              </p>
+              <div class="targeta-final">
+                <span
+                  ><span data-feather="users" aria-hidden="true"></span> 4
+                  persones</span
+                ><a
+                  href="/det1/"
+                  aria-label="Consulta la recepta de tumbet mallorquí"
+                  >Veure recepta
+                  <span data-feather="arrow-up-right" aria-hidden="true"></span
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="targeta" data-tipus="dolc">
+            <a
+              href="/det2/"
+              class="imatge-targeta"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                src="../img/gato.jpg"
+                alt=""
+                width="960"
+                height="750"
+                loading="lazy"
+            /></a>
+            <div class="cos-targeta">
+              <p class="etiqueta">Del forn · Postres i berenars</p>
+              <h2><a href="/det2/">Gató d’ametlla</a></h2>
+              <p>
+                Ametlla mòlta, ous i un toc de llimona. Un pastís tendre per
+                acabar el dinar o compartir un berenar.
+              </p>
+              <div class="targeta-final">
+                <span
+                  ><span data-feather="users" aria-hidden="true"></span> 8
+                  racions</span
+                ><a
+                  href="/det2/"
+                  aria-label="Consulta la recepta de gató d’ametlla"
+                  >Veure recepta
+                  <span data-feather="arrow-up-right" aria-hidden="true"></span
+                ></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <aside class="nota">
+          <h2>Un menú per compartir</h2>
+          <p>
+            Comença amb el tumbet i acaba amb un tall de gató. A cada recepta
+            trobaràs els ingredients, les passes de preparació, fotografies i un
+            vídeo.
+          </p>
+        </aside>
+      </section>
+    </main>
+    <include src="./src/partials/footer.html"></include>
+    <script type="module" src="../index.js"></script>
+  </body>
+</html>

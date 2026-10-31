@@ -1,14 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ca">
-<head>
-    <link rel="stylesheet" href="./styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prova de  parcel</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Descobreix la cuina mallorquina amb les receptes del tumbet i del gató d’ametlla."
+    />
+    <title>Cuina de sempre | Sabors de Mallorca</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="inici">
     <include src="./src/partials/header.html"></include>
-<h1>Hello UOC PEC 1</h1>
-<script type="module" src="./index.js"></script>
-</body>
+    <main id="contingut" tabindex="-1">
+      <section class="hero contenidor">
+        <div class="hero-text">
+          <p class="etiqueta">Un petit receptari de l’illa</p>
+          <h1>La nostra terra.<br />La nostra <em>cuina.</em></h1>
+          <p class="entradeta">
+            Hi ha sabors que ens fan tornar a casa. Descobreix dues receptes de
+            Mallorca i gaudeix de preparar-les, passa a passa.
+          </p>
+          <a class="boto" href="/categoria/"
+            >Entra al receptari
+            <span data-feather="arrow-right" aria-hidden="true"></span
+          ></a>
+          <p class="hero-nota">Ingredients senzills. Receptes per compartir.</p>
+        </div>
+        <figure class="hero-foto">
+          <img
+            src="img/tumbet.jpg"
+            alt="Tumbet amb salsa de tomàtiga dins una greixonera de fang"
+            width="960"
+            height="720"
+          />
+          <figcaption>
+            <span>01 / De l’horta a la taula</span
+            ><a href="/det1/"
+              >Tumbet mallorquí
+              <span data-feather="arrow-up-right" aria-hidden="true"></span
+            ></a>
+          </figcaption>
+        </figure>
+      </section>
+      <div class="franja">
+        <div class="contenidor">
+          <span
+            ><span data-feather="sun" aria-hidden="true"></span> Cuina de
+            temporada</span
+          ><span
+            ><span data-feather="book-open" aria-hidden="true"></span>
+            Elaboracions passa a passa</span
+          ><span
+            ><span data-feather="heart" aria-hidden="true"></span> Per gaudir en
+            companyia</span
+          >
+        </div>
+      </div>
+      <section class="contenidor seccio">
+        <div class="titol-seccio">
+          <div>
+            <p class="etiqueta">El nostre receptari</p>
+            <h2>Què cuinam avui?</h2>
+          </div>
+          <a class="enllac" href="/categoria/"
+            >Totes les receptes
+            <span data-feather="arrow-right" aria-hidden="true"></span
+          ></a>
+        </div>
+        <div class="targetes">
+          <article class="targeta" data-tipus="salat">
+            <a
+              href="/det1/"
+              class="imatge-targeta"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                src="img/tumbet.jpg"
+                alt=""
+                width="960"
+                height="720"
+                loading="lazy"
+            /></a>
+            <div class="cos-targeta">
+              <p class="etiqueta">De l’horta · Plat de verdures</p>
+              <h3><a href="/det1/">Tumbet mallorquí</a></h3>
+              <p>
+                Patates, albergínies i pebres sota una capa de salsa de
+                tomàtiga. Tot el sabor de l’horta, dins una greixonera.
+              </p>
+              <div class="targeta-final">
+                <span
+                  ><span data-feather="users" aria-hidden="true"></span> 4
+                  persones</span
+                ><a
+                  href="/det1/"
+                  aria-label="Consulta la recepta de tumbet mallorquí"
+                  >Veure recepta
+                  <span data-feather="arrow-up-right" aria-hidden="true"></span
+                ></a>
+              </div>
+            </div>
+          </article>
+          <article class="targeta" data-tipus="dolc">
+            <a
+              href="/det2/"
+              class="imatge-targeta"
+              tabindex="-1"
+              aria-hidden="true"
+              ><img
+                src="img/gato.jpg"
+                alt=""
+                width="960"
+                height="750"
+                loading="lazy"
+            /></a>
+            <div class="cos-targeta">
+              <p class="etiqueta">Del forn · Postres i berenars</p>
+              <h3><a href="/det2/">Gató d’ametlla</a></h3>
+              <p>
+                Ametlla mòlta, ous i un toc de llimona. Un pastís tendre per
+                acabar el dinar o compartir un berenar.
+              </p>
+              <div class="targeta-final">
+                <span
+                  ><span data-feather="users" aria-hidden="true"></span> 8
+                  racions</span
+                ><a
+                  href="/det2/"
+                  aria-label="Consulta la recepta de gató d’ametlla"
+                  >Veure recepta
+                  <span data-feather="arrow-up-right" aria-hidden="true"></span
+                ></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="historia contenidor">
+        <div class="numero" aria-hidden="true">A taula.</div>
+        <div>
+          <p class="etiqueta">Cuinar també és recordar</p>
+          <h2>Receptes que passen<br />de mà en mà.</h2>
+          <p>
+            La cuina mallorquina forma part dels dinars en família, dels
+            berenars i de les trobades amb amics. Es transmet entre fogons, amb
+            petits gestos i maneres de fer que cada casa fa seves.
+          </p>
+          <p>
+            Aquí començam amb un plat salat i unes postres: el tumbet i el gató
+            d’ametlla. Dues elaboracions per descobrir sense presses.
+          </p>
+          <a class="enllac" href="/links/"
+            >Coneix les fonts del projecte
+            <span data-feather="arrow-right" aria-hidden="true"></span
+          ></a>
+        </div>
+      </section>
+    </main>
+    <include src="./src/partials/footer.html"></include>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
